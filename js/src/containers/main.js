@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import { Container,Content } from "native-base";
+import { Container,Content,Fab,Icon } from "native-base";
 
 import MainHeader from "../dump-components/header/index";
+import NewsFeed from "../dump-components/newsfeed/index";
+
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import * as types from "../constant/actionTypes";
@@ -17,11 +19,19 @@ import * as changeColorActions from "../actions/changeColorActions";
   render() {
     const { fetchActionData, fetchs,changeColorActionData,changeColors } = this.props;
     return (
-      <Container>
+      <Container style={{backgroundColor:'#EEEEEE'}}>
         <MainHeader title="CulturePlex" {...this.props}  />
-        <Content>
+        <Content padder>
+          <NewsFeed />
+             
          
         </Content>
+        <Fab
+         position='bottomRight'
+        style={{backgroundColor:'#01BCD5'}}
+         >
+         <Icon name="logo-instagram"  style={{color:'white'}}/>
+          </Fab> 
       </Container>
     );
   }

@@ -10,7 +10,8 @@ text: {
    
   },
   header:{
-    backgroundColor:'#2D5D82'
+    backgroundColor:'#2D5D82',
+    height:56
   },
   imageUser:{
     

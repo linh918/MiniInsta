@@ -30,20 +30,20 @@ export default class MainHeader extends Component {
         <Left
           style={{
             flexDirection: "row",
-          
+            flex:1
           }}
         > 
           <TouchableOpacity>
-           <Icon name="menu" style={{ color: 'white' ,marginLeft:16}}   />
+           <Icon name="menu" style={{ color: 'white' ,marginLeft:8}}   />
           </TouchableOpacity>
         </Left>
-        <Body >
-          <Text style={styles.text} >Mini Insta </Text>
+        <Body style={{flex:1,alignItems:'center',justifyContent:'center'}}  >
+          <Text style={styles.text} >Instagram </Text>
         </Body>
-        <Right>
-           <TouchableOpacity>
-          <Icon name="search" style={{ color: 'white' ,marginRight:16}}   />
-           </TouchableOpacity>
+        <Right style={{flex:1}} >
+          <TouchableOpacity>
+           <Icon name="send" style={{ color: 'white' ,marginRight:8}}   />
+          </TouchableOpacity>
         </Right>
       </Header>
     );
