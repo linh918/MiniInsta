@@ -103,11 +103,10 @@ export default class ComponentName extends Component {
     return(
      <View>
       <ListView
-      showsVerticalScrollIndicator={false}
-      showsHorizontalScrollIndicator={false}
-       dataSource={this.state.dataSource}
-       
-       renderRow={(item)=>this._renderRow(item)}
+        showsVerticalScrollIndicator={false}
+        showsHorizontalScrollIndicator={false}
+        dataSource={this.state.dataSource}
+        renderRow={(item)=>this._renderRow(item)}
       />
       
        
